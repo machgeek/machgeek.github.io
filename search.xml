@@ -4,9 +4,9 @@
   
     
     <entry>
-      <title>HEXO美化日志</title>
-      <link href="/2020/04/18/HEXO%E7%BE%8E%E5%8C%96%E6%97%A5%E5%BF%97/"/>
-      <url>/2020/04/18/HEXO%E7%BE%8E%E5%8C%96%E6%97%A5%E5%BF%97/</url>
+      <title>基于HEXO框架+Butterfly主题的美化日志</title>
+      <link href="/2020/04/18/%E5%9F%BA%E4%BA%8EHEXO%E6%A1%86%E6%9E%B6-Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E7%BE%8E%E5%8C%96%E6%97%A5%E5%BF%97/"/>
+      <url>/2020/04/18/%E5%9F%BA%E4%BA%8EHEXO%E6%A1%86%E6%9E%B6-Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E7%BE%8E%E5%8C%96%E6%97%A5%E5%BF%97/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -18,10 +18,10 @@
     
     <entry>
       <title>软件、网站使用笔记</title>
-      <link href="/2020/04/18/%E8%BD%AF%E4%BB%B6%E3%80%81%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97/"/>
-      <url>/2020/04/18/%E8%BD%AF%E4%BB%B6%E3%80%81%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97/</url>
+      <link href="/2020/04/18/%E8%BD%AF%E4%BB%B6%E3%80%81%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/04/18/%E8%BD%AF%E4%BB%B6%E3%80%81%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><h4 id="Microsoft-Edge"><a href="#Microsoft-Edge" class="headerlink" title="Microsoft Edge"></a>Microsoft Edge</h4><h5 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h5><ul><li><p><strong>Chrome商店</strong>：</p><ul><li><code>Google 翻译</code></li><li><code>Infinity 新标签页</code></li><li>IDM下载器：<code>IDM Integration Module</code></li><li>免费的广告拦截器：<code>Adblock Plus</code></li><li>Steam市场、库存插件：<code>Steam Inventory Helper</code></li><li>CS:GO市场磨损、印花查看插件：<code>CSGOFloat Market Checker</code></li></ul></li><li><p><strong>油猴Tampermonkey</strong>：</p><ul><li><code>中国大学慕课mooc答题/自动播放脚本(domooc)</code></li><li><code>百度文库（wenku）在线下载PDF格式文件</code></li><li>爬取页面视频、音乐：<code>音视频通用下载器</code></li><li><code>网易BUFF市场插件---CSGO版</code></li><li>计算国内交易平台与Steam市场价格比例：<code>饰品比例计算脚本</code></li><li>多平台价格对比：<code>CSGO饰品价格对比脚本</code></li></ul></li></ul><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2>]]></content>
       
       
       
