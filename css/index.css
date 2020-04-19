@@ -4386,7 +4386,7 @@ img {
   background-color: #fe0886;
 }
 #vcomment textarea {
-  background: url("/img/comment_bg.png") 100% 100% no-repeat;
+  background: url("https://cdn.jsdelivr.net/gh/machgeek/img1/1.webp") 100% 100% no-repeat;
 }
 #vcomment .info {
   display: none;
