@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  /* position: relative; */
+  flex-direction: column;
+  width: 100%;
+  /* height: 100%; */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* background: url('../img/background/bg.jpg')no-repeat center 60px fixed; */
+  /* background: url('../img/background/MedusaThuglife.jpg') no-repeat center 60px fixed; */
+  /* background-size: cover;
+  background-color: rgb(233, 233, 233); */
+  color: #1a1a1a;
+}
+
+main{
+  width: 100%;
+  /* height: 100%; */
+  margin: 0 auto;
+  flex: 1 0 auto;
+}
+

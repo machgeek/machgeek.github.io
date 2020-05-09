@@ -1,0 +1,5 @@
+body{
+    background: url('../img/background/bg.jpg')no-repeat center 60px fixed;
+    background-size: cover;
+    background-color: rgb(233, 233, 233);
+}

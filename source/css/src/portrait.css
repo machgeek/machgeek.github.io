@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+
+
+.portrait {
+  /* text-align: center; */
+  position: fixed;
+  /* left: 0; */
+  right: 50px;
+  /* margin: 0 auto; */
+  margin: 0;
+  bottom: 105px;
+  width: 200px;
+  height: 200px;
+}
+.portrait div {
+  position: absolute;
+}
+.portrait .me {
+  left: 0;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 160px;
+}
+.portrait .me .head {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 70px;
+  height: 90px;
+  background: #ffd3c1;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  top: 10px;
+  left: 5px;
+}
+.portrait .me .head .bangs {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 50px;
+  width: 94%;
+  background: #111427;
+  content: "";
+  position: absolute;
+  -moz-border-radius: 100px 100px 10px 10px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px 100px 10px 10px;
+  top: -12px;
+  left: 3px;
+}
+.portrait .me .look-left.head {
+  width: 70px;
+  left: -10px;
+}
+.portrait .me .look-left.head .bangs {
+  width: 106%;
+  left: -7px;
+}
+.portrait .me .look-right.head {
+  width: 70px;
+  left: 15px;
+}
+.portrait .me .look-right.head .bangs {
+  width: 106%;
+  left: 5px;
+}
+.portrait .me .look-down.head {
+  height: 90px;
+  top: 20px;
+  width: 70px;
+  left: 5px;
+  -moz-transform-origin: bottom center 50%;
+  -ms-transform-origin: bottom center 50%;
+  -webkit-transform-origin: bottom center 50%;
+  transform-origin: bottom center 50%;
+}
+.portrait .me .look-down.head .bangs {
+  height: 80px;
+  top: -32px;
+}
+.portrait .me .look-up.head {
+  height: 90px;
+  top: 0px;
+  width: 70px;
+  left: 5px;
+  -moz-transform-origin: bottom center 50%;
+  -ms-transform-origin: bottom center 50%;
+  -webkit-transform-origin: bottom center 50%;
+  transform-origin: bottom center 50%;
+}
+.portrait .me .look-up.head .bangs {
+  height: 40px;
+  top: -12px;
+}
+.portrait .me .look-down-right.head {
+  top: 20px;
+  left: 25px;
+  width: 70px;
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -moz-transform-origin: bottom left 50%;
+  -ms-transform-origin: bottom left 50%;
+  -webkit-transform-origin: bottom left 50%;
+  transform-origin: bottom left 50%;
+}
+.portrait .me .look-down-right.head .bangs {
+  height: 60px;
+  width: 106%;
+}
+.portrait .me .look-up-right.head {
+  height: 90px;
+  top: 0px;
+  width: 70px;
+  left: 15px;
+  -moz-transform-origin: bottom center 50%;
+  -ms-transform-origin: bottom center 50%;
+  -webkit-transform-origin: bottom center 50%;
+  transform-origin: bottom center 50%;
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.portrait .me .look-up-right.head .bangs {
+  width: 105%;
+  height: 40px;
+  top: -12px;
+  left: 5px;
+}
+.portrait .me .look-down-left.head {
+  top: 20px;
+  left: -15px;
+  width: 70px;
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  -moz-transform-origin: bottom right 50%;
+  -ms-transform-origin: bottom right 50%;
+  -webkit-transform-origin: bottom right 50%;
+  transform-origin: bottom right 50%;
+}
+.portrait .me .look-down-left.head .bangs {
+  height: 60px;
+  width: 106%;
+  left: -10px;
+}
+.portrait .me .look-up-left.head {
+  height: 90px;
+  top: 0px;
+  width: 70px;
+  left: -10px;
+  -moz-transform-origin: bottom center 50%;
+  -ms-transform-origin: bottom center 50%;
+  -webkit-transform-origin: bottom center 50%;
+  transform-origin: bottom center 50%;
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.portrait .me .look-up-left.head .bangs {
+  width: 105%;
+  height: 40px;
+  top: -12px;
+  left: -10px;
+}
+.portrait .me .neck {
+  height: 60px;
+  width: 20px;
+  position: absolute;
+  -moz-border-radius: 0px 0px 100px 100px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 0px 100px 100px;
+  background: #ffd3c1;
+  top: 60px;
+  left: 30px;
+  overflow: hidden;
+}
+.portrait .me .neck:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  top: -12px;
+  background: #ebbfad;
+  left: -18px;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.portrait .me .neck.look-left:before {
+  left: -38px;
+}
+.portrait .me .neck.look-right:before {
+  left: -5px;
+}
+.portrait .me .neck.look-down:before {
+  top: -5px;
+}
+.portrait .me .neck.look-up:before {
+  top: -22px;
+}
+.portrait .me .neck.look-down-right:before {
+  left: -2px;
+  top: -5px;
+}
+.portrait .me .neck.look-up-right:before {
+  left: -10px;
+  top: -20px;
+}
+.portrait .me .neck.look-down-left:before {
+  left: -38px;
+  top: -5px;
+}
+.portrait .me .neck.look-up-left:before {
+  left: -38px;
+  top: -20px;
+}
+.portrait .me .hair {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  height: 170px;
+  width: 105px;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+  border-radius: 45px;
+  background: #111427;
+  left: -12px;
+  top: -12px;
+  overflow: hidden;
+}
+.portrait .me .hair:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 160px;
+  background: #070a1d;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  top: 60px;
+  left: 12px;
+}
+.portrait .me .hair.look-left {
+  left: -5px;
+  width: 100px;
+}
+.portrait .me .hair.look-right {
+  left: -17px;
+  width: 100px;
+}
+.portrait .me .hair.look-down {
+  top: -12px;
+  height: 165px;
+}
+.portrait .me .hair.look-up {
+  top: -8px;
+  height: 180px;
+}
+.portrait .me .hair.look-down-right {
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+.portrait .me .hair.look-up-right {
+  left: -25px;
+  top: -8px;
+  height: 180px;
+}
+.portrait .me .hair.look-down-left {
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.portrait .me .hair.look-up-left {
+  left: -8px;
+  top: -8px;
+  height: 180px;
+}
+.portrait .me .clothes {
+  background: #d09233;
+  width: 80px;
+  height: 40px;
+  -moz-border-radius: 100px 100px 10px 10px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px 100px 10px 10px;
+  top: 105px;
+  overflow: hidden;
+}
+.portrait .me .clothes .jumper {
+  width: 60px;
+  height: 100%;
+  top: 60%;
+  background: #607789;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.portrait .me .clothes .jumper:before {
+  background: #607789;
+  width: 10px;
+  height: 50px;
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0px;
+}
+.portrait .me .clothes .jumper:after {
+  background: #607789;
+  width: 10px;
+  height: 50px;
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50px;
+}
+/* .portrait p {
+  color: #f25777;
+  margin-top: 180px;
+  font-family: "Archivo Black";
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
