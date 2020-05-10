@@ -44,6 +44,7 @@ main {
 .toc-marker path {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  stroke: #d3a13b;
 }
 
 .contents {
