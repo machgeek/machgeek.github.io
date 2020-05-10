@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="./source/css/menu.css">
     <!-- main>section文章导航 -->
     <link rel="stylesheet" href="./source/css/posts.css">
-
+    <!-- 引入category卡片样式 -->
+    <link rel="stylesheet" href="./source/css/category.css">
     <!-- footer样式 -->
     <link rel="stylesheet" href="./source/css/footer.css">
     <!-- footer线 -->
@@ -45,7 +46,7 @@
 <body>
     <header>
         <!-- 头部网站名 -->
-        <a href="#" class="sitename rolling-text">E A B A L</a>
+        <a href="/index.html" class="sitename rolling-text">E A B A L</a>
         <!-- 头部座右铭 -->
         <!-- <p class="motto">Earth & Global</p> -->
         <div class="motto">
@@ -61,7 +62,7 @@
         <!-- 头部menu -->
         <div class="menu">
             <div class="b-nav">
-                <li><a class="b-link" href="/post.html">post</a></li>
+              <li><a class="b-link" href="/post.html">post</a></li>
                 <li><a class="b-link" href="/categories.html">Categories</a></li>
                 <li><a class="b-link" href="music.html">Music</a></li>
                 <li><a class="b-link" href="https://dribbble.com/mblode">Secret Garden</a></li>
@@ -86,56 +87,109 @@
     </header>
 
     <main>
-        <!-- posts文章部分 -->
-        <section class="posts"> 
-            <div class="post-wrapper">
-                <div class="post-inner">
-                    <h2>施工中</h2>
-                    <p class="lead">施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 
-                        施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 
-                        施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 
-                        施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 施工中 
-                    </p>
-
-                    <div class="text">
-                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
-                            ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
-                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                        </p>
-                    </div>
-                </div>
+        <div class="category">
+            <div class="card" style="--cards:5">
+              <div class="child">
+                <h2>Why do I need a will</h2>
+                <p>5 articles</p>
+              </div>
+              <div class="child"></div>
+              <div class="child"></div>
+              <div class="child"></div>
+              <div class="child"></div>
             </div>
-            <div class="post-wrapper">
-                <div class="post-inner">
-                    <h2>I am the contents of this post.</h2>
-                    <p class="lead">Lorem ipsum dolor sium quis, sem. Nulla consequat massa quis enim rhoncus ut,
-                        imperdiet a, venenatis vitae, justo. Nullam dictum.</p>
-
-                    <div class="text">
-                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
-                            ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
-                            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                        </p>
-                    </div>
-                </div>
+            <div class="card" style="--cards:3">
+              <div class="child">
+                <h2>How to choose</h2>
+                <p>3 articles</p>
+              </div>
+              <div class="child"></div>
+              <div class="child"></div>
             </div>
-            
-        </section>
-
-        <!-- 半身小人 -->
-        <!-- <div class="portrait">
-            <div class="me">
-                <div class="hair"></div>
-                <div class="clothes">
-                    <div class="jumper"></div>
+            <div class="card" style="--cards:2">
+              <div class="child">
+                <h2>What happens when you die</h2>
+                <p>2 articles</p>
+              </div>
+              <div class="child"></div>
+            </div>
+            <div class="card" style="--cards:4">
+              <div class="child">
+                <h2>How to choose guardians</h2>
+                <p>4 articles</p>
+              </div>
+              <div class="child"></div>
+              <div class="child"></div>
+              <div class="child"></div>
+            </div>
+            <div class="card" style="--cards:4">
+              <div class="child">
+                <h2>Why you've been disinherited</h2>
+                <p>4 articles</p>
+              </div>
+              <div class="child"></div>
+              <div class="child"></div>
+              <div class="child"></div>
+            </div>
+            <div class="card" style="--cards:3">
+              <div class="child">
+                <h2>How to commit fraud, legally</h2>
+                <p>3 articles</p>
+              </div>
+              <div class="child"></div>
+              <div class="child"></div>
+            </div>
+            <div class="card" style="--cards:5">
+              <div class="child">
+                <h2>Stay together for the kids</h2>
+                <p>5 articles</p>
+              </div>
+              <div class="child"></div>
+              <div class="child"></div>
+              <div class="child"></div>
+            </div>
+            <div class="card" style="--cards:3">
+              <div class="child">
+                <h2>Picking music for your funeral</h2>
+                <p>3 articles</p>
+              </div>
+              <div class="child"></div>
+              <div class="child"></div>
+            </div>
+            <div class="card" style="--cards:3">
+                <div class="child">
+                  <h2>Picking music for your funeral</h2>
+                  <p>3 articles</p>
                 </div>
-                <div class="neck"></div>
-                <div class="head">
-                    <div class="bangs"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+              </div>
+              <div class="card" style="--cards:3">
+                <div class="child">
+                  <h2>Picking music for your funeral</h2>
+                  <p>3 articles</p>
                 </div>
-            </div> -->
-        <!-- <p>文字</p> -->
-        <!-- </div> -->
+                <div class="child"></div>
+                <div class="child"></div>
+              </div>
+              <div class="card" style="--cards:3">
+                <div class="child">
+                  <h2>Picking music for your funeral</h2>
+                  <p>3 articles</p>
+                </div>
+                <div class="child"></div>
+                <div class="child"></div>
+              </div>
+              <div class="card" style="--cards:3">
+                <div class="child">
+                  <h2>Picking music for your funeral</h2>
+                  <p>3 articles</p>
+                </div>
+                <div class="child"></div>
+                <div class="child"></div>
+              </div>
+              
+          </div>
 
     </main>
 
@@ -204,15 +258,8 @@
     <!-- 外部引入js -->
     <script type="text/javascript" src="./source/js/rolling-text.js"></script>
     <script src="./source/js/menu.js"></script>
-
     <!-- avatar -->
     <script src="./source/js/avatar.js"></script>
-    <!-- main文章导航 -->
-    <script src="https://cdn.jsdelivr.net/gh/machgeek/img1/posts.js"></script>
-
-    <!-- main半身小人 -->
-    <!-- <script src="./source/js/portrait.js"></script> -->
-
     <!-- 按住地球缓慢滚动至顶 -->
     <script src="./source/js/map-scroll-top.js"></script>
 
