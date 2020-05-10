@@ -1,5 +1,5 @@
-/* html:before, html:after { */
-html:after {
+html:before, html:after {
+/* html:after { */
   content: "";
   display: inline-block;
   position: fixed;
