@@ -3,20 +3,22 @@
     404 page
 =======================*/
 
-
-.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
-}
-
-.page_404  img{ width:100%;}
-
 .four_zero_four_bg{
     background-image: url(https://cdn.jsdelivr.net/gh/machgeek/AAAimg/404.gif);
-    height: 400px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
  }
 
- .contant_box_404{
-     text-align: center;
-     font-size: 40px;
- }
+
+.sitename{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Poiret One', sans-serif; */
+    /* font-family: 'Oleo Script', serif; */
+    color: #d3a13b;
+    z-index: 2;
+}
