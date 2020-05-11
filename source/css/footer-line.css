@@ -37,7 +37,7 @@ footer .text {
   padding: 0em 30px;
   text-align: center;
   font-family: 'Poiret One', sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
@@ -59,7 +59,7 @@ footer .icp{
   letter-spacing: 0px;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: 'Poiret One','Noto Serif SC';
-  font-weight: bold;
+  /* font-weight: bold; */
   display:inline-block;
   text-decoration:none;
   /* line-height: 20px; */
