@@ -46,7 +46,7 @@ nav .button:hover {
 section {
   max-width: 710px;
   margin: 250px auto;
-  margin-top: 100vh;
+  margin-top: 10vh;
   margin-bottom: 80px;
 }
 .post-wrapper:first-child .post-inner {

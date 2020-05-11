@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* font-family: Noto Serif SC; */
 }
 
 body {
@@ -13,15 +14,15 @@ body {
   padding: 0;
   /* background: url('../img/background/bg.jpg')no-repeat center 60px fixed; */
   /* background: url('../img/background/watch.png') no-repeat center fixed; */
-  /* background-size: cover; */
-  /* background-color: rgb(233, 233, 233); */
   color: #1a1a1a;
 }
 
 main{
+  font-size: 16px;
+  line-height: 1.6;
   width: 100%;
   /* height: 100%; */
-  margin: 0 auto;
+  margin: 0px auto;
   flex: 1 0 auto;
 }
 
