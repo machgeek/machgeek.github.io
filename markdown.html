@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 外部引入css -->
+    <!-- 重置样式表 -->
+    <!-- <link rel="stylesheet" href="./source/css/reset.css"> -->
+    <!-- 引入总样式框架 -->
+    <link rel="stylesheet" href="./source/css/style.css">
+    <!-- 引入字体 -->
+    <link rel="stylesheet" href="./source/css/src/font/font.css">
+    <!-- favicon网站logo -->
+    <link rel="icon" href="./source/img/favicon/favicon.ico">
+    <!-- header网站名字体滚动样式 -->
+    <link rel="stylesheet" href="./source/css/src/font/rolling-text.css">
+    <!-- header样式 -->
+    <link rel="stylesheet" href="./source/css/header.css">
+    <!-- header menu -->
+    <link rel="stylesheet" href="./source/css/menu.css">
+    <!-- footer样式 -->
+    <link rel="stylesheet" href="./source/css/footer.css">
+    <!-- footer线 -->
+    <link rel="stylesheet" href="./source/css/footer-line.css">
+
+    <!-- 引入iconfont -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
+    <!-- 引入markdown样式 -->
+    <link rel="stylesheet" href="./source/css/markdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <title>MarkdownEditor</title>
+</head>
+
+<body>
+    <header>
+        <!-- 头部网站名 -->
+        <a href="/index.html" class="sitename rolling-text">E A B A L</a>
+        <!-- 头部座右铭 -->
+        <!-- <p class="motto">Earth & Global</p> -->
+        <div class="motto">
+            <span class="motto-letter" id="earth">Earth</span>
+            <span class="motto-letter">&</span>
+
+            <!-- 小地球 -->
+            <a id="map"></a>
+
+            <span class="motto-letter" id="global">Global</span>
+        </div>
+
+        <!-- 头部menu -->
+        <div class="menu">
+            <div class="b-nav">
+              <li><a class="b-link" href="/post.html">post</a></li>
+                <li><a class="b-link" href="/categories.html">Categories</a></li>
+                <li><a class="b-link" href="/music.html">Music</a></li>
+                <li><a class="b-link" href="/secretgarden.html">Secret Garden</a></li>
+                <li><a class="b-link" href="/markdown.html">Markdown Editor</a></li>
+            </div>
+            <!-- Burger-Icon -->
+            <div class="b-container">
+                <div class="b-menu">
+                    <div class="b-bun b-bun--top"></div>
+                    <div class="b-bun b-bun--mid"></div>
+                    <div class="b-bun b-bun--bottom"></div>
+                </div>
+                <!-- Burger-Brand -->
+                <!-- <a href="#" class="b-brand">Menu</a> -->
+            </div>
+        </div>
+        <!-- 上面为头部menu -->
+
+        <div class="avatar-container">
+            <img class="avatar" src="https://cdn.jsdelivr.net/gh/machgeek/AAAimg/avatar/med.webp" alt="">
+        </div>
+
+    </header>
+
+    <main>
+        <div id="mdapp"></div>
+
+    </main>
+
+    
+
+    <!-- 引入jquery -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- 外部引入js -->
+    <script type="text/javascript" src="./source/js/rolling-text.js"></script>
+    <script src="./source/js/menu.js"></script>
+    <!-- avatar -->
+    <script src="./source/js/avatar.js"></script>
+    <!-- 按住地球缓慢滚动至顶 -->
+    <script src="./source/js/map-scroll-top.js"></script>
+    <!-- 引入markdown编辑器 及其所需要的 VUE-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/hyperapp/1.0.1/hyperapp.js'></script>
+    <script src='https://unpkg.com/marked@0.3.12/marked.min.js'></script>
+    <script src='https://unpkg.com/mousetrap@1.6.1/mousetrap.min.js'></script>
+    <script  src="./source/js/markdown.js"></script>
+
+
+</body>
+
+</html>

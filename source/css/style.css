@@ -36,7 +36,7 @@ html {
 } */
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
   background-color: rgb(233, 233, 233);
