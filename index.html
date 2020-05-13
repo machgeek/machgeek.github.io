@@ -30,14 +30,16 @@
     <link rel="stylesheet" href="./source/css/footer2.css">
 
     <!-- 上下渐变 -->
-    <link rel="stylesheet" href="./source/css/src/fade.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!-- <link rel="stylesheet" href="./source/css/src/fade.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
     <!-- 上下渐变 -->
 
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
-    <!-- 音乐播放器 -->
-    <link rel="stylesheet" href="./source/css/src/music-player.css">
+    <!-- aplayer播放器 -->
+    <link rel="stylesheet" href="./source/css/src/APlayer.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"> -->
+	<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 
     <title>Eabal</title>
 </head>
@@ -144,21 +146,12 @@
 
     <footer>
         <!-- 音乐播放器 -->
-        <div class="music-player">
-            <div class="play-music">
-                <div id="music-animation" class="music-animation">
-                    <span class="bar bar1"></span>
-                    <span class="bar bar2"></span>
-                    <span class="bar bar3"></span>
-                    <span class="bar bar4"></span>
-                    <span class="bar bar5"></span>
-                </div>
-                <div class="music-toggle"><a onClick="togglePlay()" id="toggle" data-text-swap="Music on">Music off</a>
-                </div>
-            </div>
-            <audio id="music" loop="loop"
-                src="https://m7.music.126.net/20200513171325/3728202d7f2545f6839100c669c56146/ymusic/43ae/3cc4/3eda/72b93e461c9b048fb5e81dc46739836e.mp3"></audio>
+        <div class="aplayer-wrapper">
+            <meting-js id="7477921219y" server="tencent" type="playlist" fixed="true" autoplay="false" theme='#d3a13b' order="random" volume="0.2" list-max-height="200px" list-folded="true"></meting-js>
         </div>
+        
+        <!-- <div class="aplayer" data-id="002QE24W26baEy" data-server="tencent" data-type="album" data-fixed="true"
+            data-autoplay="false" data-volume="1.0" data-list-max-height="200px" data-list-folded="true"></div> -->
 
         <!-- footer文字 -->
         <div class="text">
@@ -196,7 +189,7 @@
     <!-- 按住地球缓慢滚动至顶 -->
     <script src="./source/js/map-scroll-top.js"></script>
     <!-- 音乐播放器 -->
-    <script  src="./source/js/music-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 
 </body>
 
