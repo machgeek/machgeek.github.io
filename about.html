@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content="About Me">
+
 
     <!-- 外部引入css -->
     <!-- 重置样式表 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- <link rel="stylesheet" href="./source/css/reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- 引入总样式框架 -->
     <link rel="stylesheet" href="./source/css/style.css">
     <!-- 引入字体 -->
@@ -21,17 +23,16 @@
     <link rel="stylesheet" href="./source/css/header.css">
     <!-- header menu -->
     <link rel="stylesheet" href="./source/css/menu.css">
-
-    
-
+    <!-- footer样式 -->
+    <link rel="stylesheet" href="./source/css/footer.css">
+    <!-- footer线 -->
+    <link rel="stylesheet" href="./source/css/footer-line.css">
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
-    <!-- 引入markdown样式 -->
-    <link rel="stylesheet" href="./source/css/markdown.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
-    <!-- 引入footer2 -->
-    <link rel="stylesheet" href="./source/css/footer2.css">
-    <title>Markdown Editor</title>
+    <!-- 引入about页面样式 -->
+    <link rel="stylesheet" href="./source/css/about.css">
+
+    <title>About Me</title>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
         <!-- 头部menu -->
         <div class="menu">
             <div class="b-nav">
-                <li><a class="b-link" href="/post.html">post</a></li>
+              <li><a class="b-link" href="/post.html">post</a></li>
                 <li><a class="b-link" href="/categories.html">Categories</a></li>
                 <li><a class="b-link" href="/music.html">Music</a></li>
                 <li><a class="b-link" href="/secretgarden.html">Secret Garden</a></li>
@@ -80,36 +81,10 @@
     </header>
 
     <main>
-        <div id="mdapp"></div>
 
     </main>
 
-    <footer>
-
-        <div class="text">
-            <div class="copyright">©2020 By Eabal</div>
-            <div class="powered-by">
-                <span>Powered by</span>
-                <i class="iconfont icon-hexo"></i><span>Hexo</span>
-                <i class="iconfont icon-github2"></i><span>Github</span>
-                <i class="iconfont icon-aliyun"></i><span>Aliyun</span>
-                <i class="iconfont icon-theme"></i><span>Eabal</span>
-            </div>
-
-            <!-- icp备案 -->
-            <div>
-                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37100202000608"
-                    class="icp">
-                    <img src="./source/img/icp.png" style="vertical-align:middle;"></img>鲁公网安备37100202000608号
-                </a>
-                <a target="_blank" href="http://www.beian.miit.gov.cn" class="icp">
-                    鲁ICP备20016664号-1
-                </a>
-            </div>
-        </div>
-
-    </footer>
-
+    
 
     <!-- 引入jquery -->
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -117,14 +92,9 @@
     <script type="text/javascript" src="./source/js/rolling-text.js"></script>
     <script src="./source/js/menu.js"></script>
     <!-- avatar -->
-    <!-- <script src="./source/js/avatar.js"></script> -->
+    <script src="./source/js/avatar.js"></script>
     <!-- 按住地球缓慢滚动至顶 -->
     <script src="./source/js/map-scroll-top.js"></script>
-    <!-- 引入markdown编辑器 及其所需要的 VUE-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/hyperapp/1.0.1/hyperapp.js'></script>
-    <script src='https://unpkg.com/marked@0.3.12/marked.min.js'></script>
-    <script src='https://unpkg.com/mousetrap@1.6.1/mousetrap.min.js'></script>
-    <script src="./source/js/markdown.js"></script>
 
 
 </body>

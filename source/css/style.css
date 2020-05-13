@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
+  cursor: url("/source/img/cursor/normal.cur"),auto!important;
+  /* cursor: url("/source/img/cursor/med.cur"),auto!important; */
   /* font-family: Noto Serif SC; */
+}
+:active{
+  cursor: url("/source/img/cursor/active.cur"),auto!important;
+  /* cursor: url("/source/img/cursor/medact.cur"),auto!important; */
 }
 
 body {
@@ -12,9 +18,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  /* background: url('../img/background/bg.jpg')no-repeat center 60px fixed; */
-  /* background: url('../img/background/watch.png') no-repeat center fixed; */
-  color: #1a1a1a;
+  color: hsl(0,0%,20%);
 }
 
 main{

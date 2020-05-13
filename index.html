@@ -8,7 +8,8 @@
 
     <!-- 外部引入css -->
     <!-- 重置样式表 -->
-    <link rel="stylesheet" href="./source/css/reset.css">
+    <!-- <link rel="stylesheet" href="./source/css/reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- 引入总样式框架 -->
     <link rel="stylesheet" href="./source/css/style.css">
     <!-- 引入index样式 -->
@@ -25,11 +26,8 @@
     <link rel="stylesheet" href="./source/css/menu.css">
     <!-- main>section文章导航 -->
     <link rel="stylesheet" href="./source/css/posts.css">
-
     <!-- footer样式 -->
-    <link rel="stylesheet" href="./source/css/footer.css">
-    <!-- footer线 -->
-    <link rel="stylesheet" href="./source/css/footer-line.css">
+    <link rel="stylesheet" href="./source/css/footer2.css">
 
     <!-- 上下渐变 -->
     <link rel="stylesheet" href="./source/css/src/fade.css">
@@ -38,6 +36,8 @@
 
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
+    <!-- 音乐播放器 -->
+    <link rel="stylesheet" href="./source/css/src/music-player.css">
 
     <title>Eabal</title>
 </head>
@@ -80,15 +80,16 @@
         </div>
         <!-- 上面为头部menu -->
 
-        <div class="avatar-container">
+        <!-- 右下角半身像 -->
+        <!-- <div class="avatar-container">
             <img class="avatar" src="https://cdn.jsdelivr.net/gh/machgeek/AAAimg/avatar/med.webp" alt="">
-        </div>
+        </div> -->
 
     </header>
 
     <main>
         <!-- posts文章部分 -->
-        <section class="posts"> 
+        <!-- <section class="posts"> 
             <div class="post-wrapper">
                 <div class="post-inner">
                     <h2>施工中</h2>
@@ -122,7 +123,7 @@
                 </div>
             </div>
             
-        </section>
+        </section> -->
 
         <!-- 半身小人 -->
         <!-- <div class="portrait">
@@ -142,62 +143,45 @@
     </main>
 
     <footer>
-        <!-- 下面为footer-line样式 -->
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" height="0">
-            <defs>
-                <g id="line">
-                    <line id="svg_1" y2="15.666668" x2="99.666662" y1="15.666668" x1="0.999995" stroke-width="2"
-                        stroke="#BA8748" fill="none" />
-                    <line stroke="#BA8748" id="svg_4" y2="1" x2="8.989895" y1="1" x1="99.666661" stroke-width="2"
-                        fill="none" />
-                    <line id="svg_5" stroke="#BA8748" y2="31.166662" x2="7.832443" y1="31.166662" x1="100.109209"
-                        stroke-width="2" fill="none" />
-                </g>
-            </defs>
-        </svg>
-
-        <h2 class="headline pulse">
-
-            <div class="lines">
-
-                <svg class="left" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
-                    viewBox="0 0 205 33">
-                    <g id="headline">
-                        <use xlink:href="#line" />
-                    </g>
-                </svg>
-
-            </div>
-
-            <span class="text">
-                <p class="copyright">©2020 By Eabal</p>
-                <div class="powered-by">
-                    <span>Powered by</span>
-                    <i class="iconfont icon-hexo"></i><span>Hexo</span>
-                    <i class="iconfont icon-github2"></i><span>Github</span>
-                    <i class="iconfont icon-aliyun"></i><span>Aliyun</span>
-                    <i class="iconfont icon-theme"></i><span>Eabal</span>
+        <!-- 音乐播放器 -->
+        <div class="music-player">
+            <div class="play-music">
+                <div id="music-animation" class="music-animation">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                    <span class="bar bar5"></span>
                 </div>
-
-                <!-- icp备案 -->
-                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37100202000608"
-                    class="icp"><img src="./source/img/icp.png" style="vertical-align:middle;"></img>鲁公网安备
-                    37100202000608号</a>
-                <a target="_blank" href="http://www.beian.miit.gov.cn" class="icp">鲁ICP备20016664号-1</a>
-            </span>
-
-            <div class="lines">
-
-                <svg class="right" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
-                    viewBox="0 0 205 33">
-                    <g id="headline">
-                        <use xlink:href="#line" />
-                    </g>
-                </svg>
-
+                <div class="music-toggle"><a onClick="togglePlay()" id="toggle" data-text-swap="Music on">Music off</a>
+                </div>
             </div>
-        </h2>
-        <!-- 上面为footer-line样式 -->
+            <audio id="music" loop="loop"
+                src="https://m7.music.126.net/20200513171325/3728202d7f2545f6839100c669c56146/ymusic/43ae/3cc4/3eda/72b93e461c9b048fb5e81dc46739836e.mp3"></audio>
+        </div>
+
+        <!-- footer文字 -->
+        <div class="text">
+            <div class="copyright">©2020 By Eabal</div>
+            <div class="powered-by">
+                <span>Powered by</span>
+                <i class="iconfont icon-hexo"></i><span>Hexo</span>
+                <i class="iconfont icon-github2"></i><span>Github</span>
+                <i class="iconfont icon-aliyun"></i><span>Aliyun</span>
+                <i class="iconfont icon-theme"></i><span>Eabal</span>
+            </div>
+
+            <!-- icp备案 -->
+            <div>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37100202000608"
+                    class="icp">
+                    <img src="./source/img/icp.png" style="vertical-align:middle;"></img>鲁公网安备37100202000608号
+                </a>
+                <a target="_blank" href="http://www.beian.miit.gov.cn" class="icp">
+                    鲁ICP备20016664号-1
+                </a>
+            </div>
+        </div>
 
     </footer>
 
@@ -207,16 +191,12 @@
     <script type="text/javascript" src="./source/js/rolling-text.js"></script>
     <script src="./source/js/menu.js"></script>
 
-    <!-- avatar -->
-    <script src="./source/js/avatar.js"></script>
     <!-- main文章导航 -->
     <script src="https://cdn.jsdelivr.net/gh/machgeek/img1/posts.js"></script>
-
-    <!-- main半身小人 -->
-    <!-- <script src="./source/js/portrait.js"></script> -->
-
     <!-- 按住地球缓慢滚动至顶 -->
     <script src="./source/js/map-scroll-top.js"></script>
+    <!-- 音乐播放器 -->
+    <script  src="./source/js/music-player.js"></script>
 
 </body>
 

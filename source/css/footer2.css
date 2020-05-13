@@ -1,0 +1,31 @@
+footer{
+    margin-bottom: 10px;
+}
+
+footer .text,.icp{
+    /* height: 100px; */
+    max-width: 90%;
+    margin: 0 auto;
+    /* padding: 10px 30px; */
+    text-align: center;
+    font-family: 'Poiret One','Noto Serif SC', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 2em;
+    color: #BA8748;
+  }
+  @media screen and (max-width: 750px) {
+    footer .text,.icp {
+      font-size: 10px;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+    }
+  }
+
+footer .icp{
+    vertical-align: middle;
+}
