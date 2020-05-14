@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content="About Me">
+    <title>About</title>
 
-
-    <!-- 外部引入css -->
+    <!-- Pjax -->
+    <script src="./source/js/jquery-3.4.1.js"></script>
+    <script src="./source/js/jquery.pjax.js"></script>
+    <!-- aplayer播放器 -->
+    <link rel="stylesheet" href="/source/css/src/APlayer.min.css">
     <!-- 重置样式表 -->
-    <!-- <link rel="stylesheet" href="./source/css/reset.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- 引入总样式框架 -->
     <link rel="stylesheet" href="./source/css/style.css">
@@ -24,15 +27,9 @@
     <!-- header menu -->
     <link rel="stylesheet" href="./source/css/menu.css">
     <!-- footer样式 -->
-    <link rel="stylesheet" href="./source/css/footer.css">
-    <!-- footer线 -->
-    <link rel="stylesheet" href="./source/css/footer-line.css">
+    <link rel="stylesheet" href="./source/css/footer2.css">
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
-    <!-- 引入about页面样式 -->
-    <link rel="stylesheet" href="./source/css/about.css">
-
-    <title>About Me</title>
 </head>
 
 <body>
@@ -82,20 +79,64 @@
 
     <main>
 
+        <!-- ========================== j s + c s s ================================= -->
+        <link rel="stylesheet" href="./source/css/about.css">
+        <!-- ========================== j s + c s s ================================= -->
+
     </main>
 
-    
+    <footer>
+        <div class="aplayer-wrapper">
+            <meting-js id="7477921219y" server="tencent" type="playlist" fixed="true" theme='#d3a13b' order="random"
+                volume="0.2" list-max-height="200px" list-folded="true" autoplay="true" preload="auto"></meting-js>
+        </div>
 
-    <!-- 引入jquery -->
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- 外部引入js -->
+        <!-- footer文字 -->
+        <div class="text">
+            <div class="copyright">©2020 By Eabal</div>
+            <div class="powered-by">
+                <span>Powered by</span>
+                <i class="iconfont icon-hexo"></i><span>Hexo</span>
+                <i class="iconfont icon-github2"></i><span>Github</span>
+                <i class="iconfont icon-aliyun"></i><span>Aliyun</span>
+                <i class="iconfont icon-theme"></i><span>Eabal</span>
+            </div>
+
+            <!-- icp备案 -->
+            <div>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37100202000608"
+                    class="icp">
+                    <img src="./source/img/icp.png" style="vertical-align:middle;"></img>鲁公网安备37100202000608号
+                </a>
+                <a target="_blank" href="http://www.beian.miit.gov.cn" class="icp">
+                    鲁ICP备20016664号-1
+                </a>
+            </div>
+        </div>
+
+        
+    </footer>
+
+    <!-- ========================  J S  ============================ -->
+    <!-- pjax -->
+    <script type="text/javascript">
+        $(function () {
+            $(document).pjax('a', 'main', {
+                fragment: 'main',
+                timeout: 5000,
+                cache: false
+            });
+        })
+    </script>
+    <!-- aplayer -->
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    <!-- header js -->
     <script type="text/javascript" src="./source/js/rolling-text.js"></script>
     <script src="./source/js/menu.js"></script>
-    <!-- avatar -->
-    <script src="./source/js/avatar.js"></script>
     <!-- 按住地球缓慢滚动至顶 -->
     <script src="./source/js/map-scroll-top.js"></script>
-
+    <!-- ========================  J S  ============================ -->
 
 </body>
 

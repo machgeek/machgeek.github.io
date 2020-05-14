@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- 外部引入css -->
+    <meta name='description' content="Markdown-Editor">
+    <title>Markdown-Editor</title>
+  
+    <!-- Pjax -->
+    <script src="./source/js/jquery-3.4.1.js"></script>
+    <script src="./source/js/jquery.pjax.js"></script>
+    <!-- aplayer播放器 -->
+    <link rel="stylesheet" href="/source/css/src/APlayer.min.css">
     <!-- 重置样式表 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <!-- <link rel="stylesheet" href="./source/css/reset.css"> -->
     <!-- 引入总样式框架 -->
     <link rel="stylesheet" href="./source/css/style.css">
     <!-- 引入字体 -->
@@ -21,17 +26,11 @@
     <link rel="stylesheet" href="./source/css/header.css">
     <!-- header menu -->
     <link rel="stylesheet" href="./source/css/menu.css">
-
-    
-
+    <!-- footer样式 -->
+    <link rel="stylesheet" href="./source/css/footer2.css">
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
-    <!-- 引入markdown样式 -->
-    <link rel="stylesheet" href="./source/css/markdown.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
-    <!-- 引入footer2 -->
-    <link rel="stylesheet" href="./source/css/footer2.css">
-    <title>Markdown Editor</title>
+
 </head>
 
 <body>
@@ -82,10 +81,23 @@
     <main>
         <div id="mdapp"></div>
 
+        <!-- ========================== j s + c s s ================================= -->
+        <link rel="stylesheet" href="./source/css/markdown.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/hyperapp/1.0.1/hyperapp.js'></script>
+    <script src='https://unpkg.com/marked@0.3.12/marked.min.js'></script>
+    <script src='https://unpkg.com/mousetrap@1.6.1/mousetrap.min.js'></script>
+    <script src="./source/js/markdown.js"></script>
+        <!-- ========================== j s + c s s ================================= -->
+
     </main>
 
     <footer>
+        <div class="aplayer-wrapper">
+            <meting-js id="7477921219y" server="tencent" type="playlist" fixed="true" theme='#d3a13b' order="random"
+                volume="0.2" list-max-height="200px" list-folded="true" autoplay="true" preload="auto"></meting-js>
+        </div>
 
+        <!-- footer文字 -->
         <div class="text">
             <div class="copyright">©2020 By Eabal</div>
             <div class="powered-by">
@@ -108,24 +120,29 @@
             </div>
         </div>
 
+        
     </footer>
 
-
-    <!-- 引入jquery -->
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- 外部引入js -->
+    <!-- ========================  J S  ============================ -->
+    <!-- pjax -->
+    <script type="text/javascript">
+        $(function () {
+            $(document).pjax('a', 'main', {
+                fragment: 'main',
+                timeout: 5000,
+                cache: false
+            });
+        })
+    </script>
+    <!-- aplayer -->
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    <!-- header js -->
     <script type="text/javascript" src="./source/js/rolling-text.js"></script>
     <script src="./source/js/menu.js"></script>
-    <!-- avatar -->
-    <!-- <script src="./source/js/avatar.js"></script> -->
     <!-- 按住地球缓慢滚动至顶 -->
     <script src="./source/js/map-scroll-top.js"></script>
-    <!-- 引入markdown编辑器 及其所需要的 VUE-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/hyperapp/1.0.1/hyperapp.js'></script>
-    <script src='https://unpkg.com/marked@0.3.12/marked.min.js'></script>
-    <script src='https://unpkg.com/mousetrap@1.6.1/mousetrap.min.js'></script>
-    <script src="./source/js/markdown.js"></script>
-
+    <!-- ========================  J S  ============================ -->
 
 </body>
 
