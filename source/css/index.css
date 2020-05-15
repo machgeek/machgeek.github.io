@@ -13,9 +13,10 @@
 
 body{
     /* background-image: url('https://cdn.jsdelivr.net/gh/machgeek/AAAimg/avatar/yuantu/med.png'); */
-    background-image: url(https://cdn.jsdelivr.net/gh/machgeek/AAAimg/background/bg2.jpg);
+    /* background-image: url(https://cdn.jsdelivr.net/gh/machgeek/AAAimg/background/bg2.jpg); */
+    background-image: url('https://cdn.jsdelivr.net/gh/machgeek/AAAimg/background/bg16x9.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: 480px;
+    background-size: 700px;
 }

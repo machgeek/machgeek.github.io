@@ -1,0 +1,127 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content="Eabal's Hexo Blog">
+    <title>Eabal</title>
+
+    <!-- Pjax -->
+    <script src="./source/js/jquery-3.4.1.js"></script>
+    <script src="./source/js/jquery.pjax.js"></script>
+    <!-- aplayer播放器 -->
+    <link rel="stylesheet" href="/source/css/src/APlayer.min.css">
+    <!-- 重置样式表 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- 引入总样式框架 -->
+    <link rel="stylesheet" href="./source/css/style.css">
+    <!-- 引入字体 -->
+    <link rel="stylesheet" href="./source/css/src/font/font.css">
+    <!-- favicon网站logo -->
+    <link rel="icon" href="./source/img/favicon/favicon.ico">
+    <!-- header网站名字体滚动样式 -->
+    <link rel="stylesheet" href="./source/css/src/font/rolling-text.css">
+    <!-- header样式 -->
+    <link rel="stylesheet" href="./source/css/header.css">
+    <!-- header menu -->
+    <link rel="stylesheet" href="./source/css/menu.css">
+    <!-- footer样式 -->
+    <link rel="stylesheet" href="./source/css/footer2.css">
+    <!-- 引入iconfont -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
+
+</head>
+
+<header>
+    <!-- 头部网站名 -->
+    <a href="index.html" class="sitename rolling-text">E A B A L</a>
+    <!-- 头部座右铭 -->
+    <!-- <p class="motto">Earth & Global</p> -->
+    <div class="motto">
+        <span class="motto-letter" id="earth">Earth</span>
+        <!-- <span class="motto-letter">&</span> -->
+
+        <!-- 小地球 -->
+        <a id="map"></a>
+
+        <span class="motto-letter" id="global">Global</span>
+    </div>
+
+    <!-- 头部menu -->
+    <div class="menu">
+        <div class="b-nav">
+            <li><a class="b-link" href="/post.html">post</a></li>
+            <li><a class="b-link" href="/categories.html">Categories</a></li>
+            <li><a class="b-link" href="music.html">Music</a></li>
+            <li><a class="b-link" href="/secretgarden.html">Secret Garden</a></li>
+            <li><a class="b-link" target="_blank" href="/markdown.html">Markdown Editor</a></li>
+        </div>
+        <!-- Burger-Icon -->
+        <div class="b-container">
+            <div class="b-menu">
+                <div class="b-bun b-bun--top"></div>
+                <div class="b-bun b-bun--mid"></div>
+                <div class="b-bun b-bun--bottom"></div>
+            </div>
+            <!-- Burger-Brand -->
+            <!-- <a href="#" class="b-brand">Menu</a> -->
+        </div>
+    </div>
+    <!-- 上面为头部menu -->
+
+    <!-- 右下角半身像 -->
+    <!-- <div class="avatar-container">
+        <img class="avatar" src="https://cdn.jsdelivr.net/gh/machgeek/AAAimg/avatar/med.webp" alt="">
+    </div> -->
+
+</header>
+
+<footer>
+    <div class="aplayer-wrapper">
+        <meting-js id="7562063093" server="tencent" type="playlist" fixed="true" theme='#d3a13b' order="random"
+            volume="0.3" list-max-height="200px" list-folded="true" autoplay="true" preload="auto"></meting-js>
+    </div>
+
+    <!-- footer文字 -->
+    <div class="text">
+        <div class="copyright">©2020 By Eabal</div>
+        <div class="powered-by">
+            <span>Powered by</span>
+            <i class="iconfont icon-hexo"></i><span>Hexo</span>
+            <i class="iconfont icon-github2"></i><span>Github</span>
+            <i class="iconfont icon-aliyun"></i><span>Aliyun</span>
+            <i class="iconfont icon-theme"></i><span>Eabal</span>
+        </div>
+
+        <!-- icp备案 -->
+        <div>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37100202000608"
+                class="icp">
+                <img src="./source/img/icp.png" style="vertical-align:middle;"></img>鲁公网安备37100202000608号
+            </a>
+            <a target="_blank" href="http://www.beian.miit.gov.cn" class="icp">
+                鲁ICP备20016664号-1
+            </a>
+        </div>
+    </div>
+
+
+</footer>
+
+<!-- ========================  J S  ============================ -->
+<!-- pjax -->
+<script type="text/javascript">
+    $(document).pjax('a[target!=_blank]', 'main', {
+        fragment: 'main',
+        timeout: 5000,
+        // cache: false
+    });
+</script>
+
+<!-- aplayer -->
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+<!-- header js -->
+<script type="text/javascript" src="./source/js/rolling-text.js"></script>
+<script src="./source/js/menu.js"></script>
+<!-- 按住地球缓慢滚动至顶 -->
+<!-- <script src="./source/js/map-scroll-top.js"></script> -->
+<!-- ========================  J S  ============================ -->
