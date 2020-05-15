@@ -31,9 +31,7 @@
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
     <!-- 页面渐变 -->
-    <link rel="stylesheet" href="./source/css/src/fade.css">
-    <!-- loading -->
-  <link rel="stylesheet" href="./source/css/src/loading.css">
+    <!-- <link rel="stylesheet" href="./source/css/src/fade.css"> -->
 
 </head>
 
@@ -181,15 +179,13 @@
     </footer>
 
     <!-- ========================  J S  ============================ -->
+    </script>
     <!-- pjax -->
     <script type="text/javascript">
         $(document).pjax('a[target!=_blank]', 'main', {
             fragment: 'main',
             timeout: 5000,
             // cache: false
-        });
-        $(document).on('pjax:complete', function () {
-            completeLoading()
         });
     </script>
 

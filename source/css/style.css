@@ -10,6 +10,7 @@
 }
 
 body {
+  background-color: white;
   display: flex;
   /* position: relative; */
   flex-direction: column;
@@ -30,6 +31,11 @@ main{
   flex: 1 0 auto;
 }
 
+/* 字体抗锯齿，更清晰 */
+html{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
 
 /* ////////滚动条样式///////////// */
 html {
@@ -52,5 +58,4 @@ body{
   /* border-radius: 10px; */
   background-color: rgb(200, 200, 200);	
 }
-
 /* /////////////////////////// */

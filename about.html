@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="./source/css/footer2.css">
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
+    <!-- 页面渐变 -->
+    <link rel="stylesheet" href="./source/css/src/fade.css">
+    <!-- loading -->
+    <link rel="stylesheet" href="./source/css/src/loading.css">
 </head>
 
 <body>
@@ -51,9 +55,9 @@
         <!-- 头部menu -->
         <div class="menu">
             <div class="b-nav">
-              <li><a class="b-link" href="/post.html">post</a></li>
+                <li><a class="b-link" href="/index.html">Home</a></li>
+                <li><a class="b-link" href="/post.html">Post</a></li>
                 <li><a class="b-link" href="/categories.html">Categories</a></li>
-                <li><a class="b-link" href="/music.html">Music</a></li>
                 <li><a class="b-link" href="/secretgarden.html">Secret Garden</a></li>
                 <li><a class="b-link" target="_blank" href="/markdown.html">Markdown Editor</a></li>
             </div>
@@ -78,6 +82,8 @@
     </header>
 
     <main>
+        <!-- loading -->
+    <div class="spinner" id="loading"></div>
         <!-- ========================== c s s =============================== -->
         <link rel="stylesheet" href="./source/css/about.css">
         <!-- ========================== c s s =============================== -->
@@ -117,7 +123,7 @@
             </div>
         </div>
 
-        
+
     </footer>
 
     <!-- ========================  J S  ============================ -->
@@ -130,6 +136,9 @@
                 cache: false
             });
         })
+        $(document).on('pjax:complete', function () {
+      completeLoading()
+    });
     </script>
     <!-- aplayer -->
     <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -139,6 +148,8 @@
     <script src="./source/js/menu.js"></script>
     <!-- 按住地球缓慢滚动至顶 -->
     <!-- <script src="./source/js/map-scroll-top.js"></script> -->
+    <!-- loading -->
+  <script src="./source/js/loading.js"></script>
     <!-- ========================  J S  ============================ -->
 
 </body>
