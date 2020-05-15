@@ -59,7 +59,7 @@ header{
     /* position: absolute; */
     /* top: 50%; */
     /* left: 50%; */
-    position: fixed;
+    /* position: fixed; */
     /* top: 80px; */
     width: 50px;
     height: 50px;
@@ -70,7 +70,7 @@ header{
     /* margin-left: -27px; */
     margin: 0 auto;
     border-radius: 50px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     box-shadow: inset 0px 0px 1px #d3a13b,0px 0px 6px -1px #d3a13b;
     background-size: auto 100%;
     background-repeat: repeat-x;

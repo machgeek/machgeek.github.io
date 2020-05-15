@@ -35,9 +35,9 @@ main{
 html {
   overflow: auto;
 }
-/* body{
+body{
   overflow-y: scroll
-} */
+}
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;

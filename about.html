@@ -40,7 +40,7 @@
         <!-- <p class="motto">Earth & Global</p> -->
         <div class="motto">
             <span class="motto-letter" id="earth">Earth</span>
-            <span class="motto-letter">&</span>
+            <!-- <span class="motto-letter">&</span> -->
 
             <!-- 小地球 -->
             <a id="map"></a>
@@ -55,7 +55,7 @@
                 <li><a class="b-link" href="/categories.html">Categories</a></li>
                 <li><a class="b-link" href="/music.html">Music</a></li>
                 <li><a class="b-link" href="/secretgarden.html">Secret Garden</a></li>
-                <li><a class="b-link" href="/markdown.html">Markdown Editor</a></li>
+                <li><a class="b-link" target="_blank" href="/markdown.html">Markdown Editor</a></li>
             </div>
             <!-- Burger-Icon -->
             <div class="b-container">
@@ -130,12 +130,6 @@
                 cache: false
             });
         })
-        //如果页面标题为‘MarkdownEditor’则刷新页面，因为以我目前的技术，不刷新页面的话，markdown编辑器显示不出来
-        $(document).on('pjax:complete', function () {
-            if (document.title== 'MarkdownEditor') {
-                location.reload();
-            }
-        });
     </script>
     <!-- aplayer -->
     <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -144,7 +138,7 @@
     <script type="text/javascript" src="./source/js/rolling-text.js"></script>
     <script src="./source/js/menu.js"></script>
     <!-- 按住地球缓慢滚动至顶 -->
-    <script src="./source/js/map-scroll-top.js"></script>
+    <!-- <script src="./source/js/map-scroll-top.js"></script> -->
     <!-- ========================  J S  ============================ -->
 
 </body>
