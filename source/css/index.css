@@ -12,9 +12,10 @@
 } */
 
 body{
-    background-image: url('https://cdn.jsdelivr.net/gh/machgeek/AAAimg/avatar/yuantu/med.png');
+    /* background-image: url('https://cdn.jsdelivr.net/gh/machgeek/AAAimg/avatar/yuantu/med.png'); */
+    background-image: url(https://cdn.jsdelivr.net/gh/machgeek/AAAimg/background/bg2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: 400px;
+    background-size: 480px;
 }
