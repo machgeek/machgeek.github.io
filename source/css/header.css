@@ -1,10 +1,6 @@
-
 /* 网站名 */
-
 header{
-    /* min-width: 500px; */
     width: 100%;
-    /* height: 117px; */
     margin: 0 auto;
     flex: 0 0 auto;
 }
@@ -13,13 +9,21 @@ header{
     display: block;
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
     text-align: center;
     font-family: 'Playfair Display', serif;
-    /* font-family: 'Old Standard TT', sans-serif; */
-    /* font-family: 'Oleo Script', serif; */
     color: #d3a13b;
     z-index: 2;
+}
+@media screen and (max-width: 1200px) {
+    .sitename{
+        font-size: 42px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sitename{
+        font-size: 36px;
+    }
 }
 
 /* 网站名下的座右铭 */
@@ -39,6 +43,16 @@ header{
     font-size: 22px;
     font-family: 'Poiret One', sans-serif;
     color: #d3a13b;
+}
+@media screen and (max-width: 1200px) {
+    .motto-letter{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .motto-letter{
+        font-size: 18px;
+    }
 }
 
 #earth{
@@ -79,29 +93,18 @@ header{
     background-position: -126px;
     /* box-shadow: inset 0px 0px 1px #d3a13b,0px 0px 10px -1px #d3a13b; */
   }
-
-  .avatar-container{
-      width: 200px;
-      height: 200px;
-      position: fixed;
-      bottom: 30px;
-      right: 20px;
-      overflow: hidden;
-  }
-  .avatar{
-      width: 100%;
-      height: 100%;
-  }
-  /* .avatar-show{
-      width: 100%;
-      height: 100%;
-      display: block;
-  }
-  .avatar-hide{
-    width: 100%;
-    height: 100%;
-    display: none;
-} */
+@media screen and (max-width: 1200px) {
+    #map {
+        width: 45px;
+        height: 45px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #map {
+        width: 40px;
+        height: 40px;
+    }
+}
 
 
 
