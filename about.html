@@ -7,6 +7,7 @@
     <meta name='description' content="About Me">
     <title>About</title>
 
+    <!-- ========================== 通用 c s s ================================ -->
     <!-- Pjax -->
     <script src="./source/js/jquery-3.4.1.js"></script>
     <script src="./source/js/jquery.pjax.js"></script>
@@ -31,9 +32,18 @@
     <!-- 引入iconfont -->
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1805639_ypq912vaac.css">
     <!-- 页面渐变 -->
-    <link rel="stylesheet" href="./source/css/src/fade.css">
+    <!-- <link rel="stylesheet" href="./source/css/src/fade.css"> -->
     <!-- loading -->
     <link rel="stylesheet" href="./source/css/src/loading.css">
+
+    <!-- ========================== CATEGORIES c s s ========================== -->
+    <link rel="stylesheet" href="./source/css/category.css">
+
+    <!-- ========================== POST c s s =============================== -->
+    <link rel="stylesheet" href="./source/css/post.css">
+
+    <!-- ========================== ABOUT c s s =============================== -->
+
 </head>
 
 <body>
@@ -83,10 +93,7 @@
 
     <main>
         <!-- loading -->
-    <div class="spinner" id="loading"></div>
-        <!-- ========================== c s s =============================== -->
-        <link rel="stylesheet" href="./source/css/about.css">
-        <!-- ========================== c s s =============================== -->
+        <div class="spinner" id="loading"></div>
 
         <!-- ========================== j s ================================= -->
         <link rel="stylesheet" href="./source/css/about.css">
@@ -137,8 +144,8 @@
             });
         })
         $(document).on('pjax:complete', function () {
-      completeLoading()
-    });
+            completeLoading()
+        });
     </script>
     <!-- aplayer -->
     <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -149,7 +156,7 @@
     <!-- 按住地球缓慢滚动至顶 -->
     <!-- <script src="./source/js/map-scroll-top.js"></script> -->
     <!-- loading -->
-  <script src="./source/js/loading.js"></script>
+    <script src="./source/js/loading.js"></script>
     <!-- ========================  J S  ============================ -->
 
 </body>
