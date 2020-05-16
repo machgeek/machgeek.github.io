@@ -38,10 +38,8 @@ html{
 }
 
 /* ////////滚动条样式///////////// */
-html {
-  overflow: auto;
-}
-body{
+html{
+  overflow-x: auto;
   overflow-y: scroll
 }
 /* Scrollbar Styling */
