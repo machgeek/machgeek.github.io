@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='description' content="post">
-    <title>Post</title>
+    <meta name='description' content="Eabal's Hexo Blog">
+    <title>Eabal</title>
 
     <!-- ========================== 通用 c s s ================================ -->
     <!-- Pjax -->
@@ -35,11 +35,6 @@
     <!-- <link rel="stylesheet" href="./source/css/src/fade.css"> -->
     <!-- loading -->
     <link rel="stylesheet" href="./source/css/src/loading.css">
-
-    <!-- ========================== INDEX c s s =============================== -->
-    <link rel="stylesheet" href="./source/css/index.css">
-    <!-- main>section文章导航 -->
-    <!-- <link rel="stylesheet" href="./source/css/posts.css"> -->
 
     <!-- ========================== CATEGORIES c s s ========================== -->
     <link rel="stylesheet" href="./source/css/category.css">
@@ -71,10 +66,10 @@
         <div class="menu">
             <div class="b-nav">
                 <li><a class="b-link" href="/">Home</a></li>
-                <li><a class="b-link" href="/post">Post</a></li>
-                <li><a class="b-link" href="/categories">Categories</a></li>
-                <li><a class="b-link" href="/secretgarden">Secret Garden</a></li>
-                <li><a class="b-link" target="_blank" href="/markdown">Markdown Editor</a></li>
+                <li><a class="b-link" href="/post.html">Post</a></li>
+                <li><a class="b-link" href="/categories.html">Categories</a></li>
+                <li><a class="b-link" href="/secretgarden.html">Secret Garden</a></li>
+                <li><a class="b-link" target="_blank" href="/markdown.html">Markdown Editor</a></li>
             </div>
             <!-- Burger-Icon -->
             <div class="b-container">
@@ -96,10 +91,10 @@
 
     </header>
 
-    <main>
+    <main id="post">
         <!-- loading -->
         <div class="spinner" id="loading"></div>
-
+    
         <nav class="toc">
             <ul>
                 <li><a href="#intro">Intro</a></li>
@@ -126,7 +121,7 @@
                     stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
             </svg>
         </nav>
-
+    
         <article class="contents">
             <section id="intro">
                 <h2>Progress Nav</h2>
@@ -155,7 +150,7 @@
                     additional APIs in the future.
                 </p>
             </section>
-
+    
             <section>
                 <div id="dev">
                     <h2>Developer Mode</h2>
@@ -169,7 +164,7 @@
                     </p>
                     <img class="developer-image" src="https://cdn.jsdelivr.net/gh/machgeek/AAAimg/background/bg2.jpg">
                 </div>
-
+    
                 <div id="dev-edit-html">
                     <h3>Editing HTML</h3>
                     <p>
@@ -177,11 +172,11 @@
                         to the current slide's HTML, allowing you to change anything you like. Note that some elements,
                         such as &lt;script&gt; and &lt;link&gt;, are not allowed for security reasons.﻿
                     </p>
-
+    
                     <img class="developer-image"
                         src="https://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-2.png">
                 </div>
-
+    
                 <div id="dev-element-classes">
                     <h3>Element Classes <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h3>
                     <p>
@@ -197,11 +192,11 @@
                     <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css">.upside-down {
             transform: scale( 1, -1 );
         }</code></pre>
-
+    
                     <img class="developer-image"
                         src="https://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-3.png">
                 </div>
-
+    
                 <div id="dev-slide-classes">
                     <h3>Slide Classes <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h3>
                     <p>
@@ -216,7 +211,7 @@
                         examples showing how you'd target the slide contents or slide background using a custom class
                         called "night-sky":
                     </p>
-
+    
                     <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css">// Targets the slide contents
         .slides .night-sky svg path {
             fill: yellow;
@@ -226,11 +221,11 @@
         .backgrounds .night-sky {
             background: linear-gradient(0deg, #141528, #0b1bb2);
         }</code></pre>
-
+    
                     <img class="developer-image"
                         src="https://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-5.png">
                 </div>
-
+    
                 <div id="dev-export-html">
                     <h3>Export HTML</h3>
                     <p>
@@ -239,13 +234,13 @@
                         styles to reveal.js. There are a few limitations with exporting this way but it should provide a
                         good starting point.
                     </p>
-
+    
                     <img class="developer-image"
                         src="https://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-6.png">
                 </div>
-
+    
             </section>
-
+    
             <section>
                 <div id="css">
                     <h2>CSS Editor <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h2>
@@ -276,7 +271,7 @@
                         focused element. This is a convenient way to easily apply your CSS to specific elements.
                     </p>
                 </div>
-
+    
                 <div id="css-examples">
                     <h3>Examples</h3>
                     <pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css">// Change presentation background
@@ -327,28 +322,27 @@
             border-top-color: @interactiveColor !important;
         }</code></pre>
                 </div>
-
+    
                 <p>Here's where you can access the CSS editor from inside of the Style panel:</p>
                 <img class="developer-image"
                     src="https://static.slid.es.s3.amazonaws.com/site/developers/slides-css-editor-1.png">
-
+    
                 <p>A screenshot of the editor:</p>
                 ﻿<img class="developer-image"
                     src="https://static.slid.es.s3.amazonaws.com/site/developers/slides-css-editor-2.png">
-
+    
             </section>
         </article>
-
+    
         <!-- ========================== j s ================================= -->
         <script src="./source/js/post.js"></script>
         <!-- ========================== j s ================================= -->
-
+    
     </main>
 
     <footer>
-        <!-- aplayer -->
         <div class="aplayer-wrapper">
-            <meting-js id="7477921219y" server="tencent" type="playlist" fixed="true" theme='#d3a13b' order="random"
+            <meting-js id="7562063093" server="tencent" type="playlist" fixed="true" theme='#d3a13b' order="random"
                 volume="0.3" list-max-height="200px" list-folded="true" autoplay="true" preload="auto"></meting-js>
         </div>
 
@@ -375,22 +369,22 @@
             </div>
         </div>
 
+
     </footer>
 
     <!-- ========================  J S  ============================ -->
     <!-- pjax -->
     <script type="text/javascript">
-        $(function () {
-            $(document).pjax('a', 'main', {
-                fragment: 'main',
-                timeout: 5000,
-                cache: false
-            });
-        })
+        $(document).pjax('a[target!=_blank]', 'main', {
+            fragment: 'main',
+            timeout: 5000,
+            // cache: false
+        });
         $(document).on('pjax:complete', function () {
             completeLoading()
         });
     </script>
+
     <!-- aplayer -->
     <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
@@ -402,7 +396,6 @@
     <!-- loading -->
     <script src="./source/js/loading.js"></script>
     <!-- ========================  J S  ============================ -->
-
 
 </body>
 
