@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   color: hsl(0,0%,20%);
+  background-color: rgb(255,250,248);
 }
 
 main{
@@ -30,18 +31,16 @@ main{
   flex: 1 0 auto;
 }
 
-/* 字体抗锯齿，更清晰 */
+
 html{
+  /* 字体抗锯齿，更清晰 */
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-}
-
-/* ////////滚动条样式///////////// */
-html{
+  /* ////////滚动条///////////// */
   overflow-x: auto;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
-/* Scrollbar Styling */
+/* 滚动条样式 */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -55,4 +54,3 @@ html{
   /* border-radius: 10px; */
   background-color: rgb(200, 200, 200);	
 }
-/* /////////////////////////// */

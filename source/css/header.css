@@ -91,7 +91,7 @@ header{
   }
   #map:hover {
     background-position: -126px;
-    /* box-shadow: inset 0px 0px 1px #d3a13b,0px 0px 10px -1px #d3a13b; */
+    box-shadow: inset 0px 0px 2px #d3a13b,0px 0px 10px -1px #d3a13b;
   }
 @media screen and (max-width: 1200px) {
     #map {

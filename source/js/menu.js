@@ -11,10 +11,4 @@
       el.classList.toggle('open');
     });
   }, false);
-
-  burgerNav.addEventListener('click', function toggleClasses() {
-    [burgerContain, burgerNav].forEach(function (el) {
-      el.classList.toggle('open');
-    });
-  }, false);
 })();

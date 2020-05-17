@@ -57,7 +57,7 @@ section {
   display: block;
   cursor: pointer;
   overflow: hidden;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #666666;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
