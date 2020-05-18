@@ -39,12 +39,15 @@ footer a:hover{
 }
 
 #gotop{
+  background-color: transparent;
   position: fixed;
-  font-size: 30px;
   color: #c8c8c8;
   bottom: 20px;
   right: 20px;
   display: none;
+}
+#gotop>i{
+  font-size: 2.5em;
 }
 #gotop:hover{
   color: #333333;
