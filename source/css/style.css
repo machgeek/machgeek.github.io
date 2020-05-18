@@ -8,6 +8,21 @@
   cursor: url("/source/img/cursor/active.cur"),auto!important;
   /* cursor: url("/source/img/cursor/medact.cur"),auto!important; */
 }
+/*文字选中效果*/
+*::selection {
+  background-color: rgb(255,250,248);
+  color: #d3a13b;
+}
+
+*::-moz-selection {
+  background-color: rgb(255,250,248);
+  color: #d3a13b;
+}
+
+*::-webkit-selection {
+  background-color: rgb(255,250,248);
+  color: #d3a13b;
+}
 
 body {
   display: flex;

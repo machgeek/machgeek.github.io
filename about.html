@@ -8,11 +8,6 @@
     <title>About</title>
 
     <!-- ========================== 通用 c s s ================================ -->
-    <!-- Pjax -->
-    <script src="./source/js/jquery-3.4.1.js"></script>
-    <script src="./source/js/jquery.pjax.js"></script>
-    <!-- aplayer播放器 -->
-    <link rel="stylesheet" href="/source/css/src/APlayer.min.css">
     <!-- 重置样式表 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- 引入总样式框架 -->
@@ -37,15 +32,6 @@
     <link rel="stylesheet" href="./source/css/src/loading.css">
     <!-- 页面飘浮气泡效果 -->
     <!-- <link rel="stylesheet" href="./source/css/src/dots.css"> -->
-
-    <!-- ========================== CATEGORIES c s s ========================== -->
-    <link rel="stylesheet" href="./source/css/category.css">
-
-    <!-- ========================== POST c s s =============================== -->
-    <link rel="stylesheet" href="./source/css/post.css">
-
-    <!-- ========================== ABOUT c s s =============================== -->
-
 
 </head>
 
@@ -109,11 +95,6 @@
     </main>
 
     <footer>
-        <div class="aplayer-wrapper">
-            <meting-js id="7477921219y" server="tencent" type="playlist" fixed="true" theme='#d3a13b' order="random"
-                volume="0.3" list-max-height="200px" list-folded="true" autoplay="true" preload="auto"></meting-js>
-        </div>
-
         <!-- footer文字 -->
         <div class="text">
             <div class="social-link">
@@ -145,25 +126,9 @@
     </footer>
 
     <!-- ========================  J S  ============================ -->
-    <!-- pjax -->
-    <script type="text/javascript">
-        $(document).pjax('a[target!=_blank]', 'main', {
-            fragment: 'main',
-            timeout: 5000,
-            // cache: false
-        });
-        $(document).on('pjax:complete', function () {
-            completeLoading()
-        });
-    </script>
-    <!-- aplayer -->
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
     <!-- header js -->
     <script type="text/javascript" src="./source/js/rolling-text.js"></script>
     <script src="./source/js/menu.js"></script>
-    <!-- 按住地球缓慢滚动至顶 -->
-    <!-- <script src="./source/js/map-scroll-top.js"></script> -->
     <!-- loading -->
     <script src="./source/js/loading.js"></script>
     <!-- ========================  J S  ============================ -->

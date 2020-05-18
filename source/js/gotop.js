@@ -8,10 +8,10 @@ $(document).ready(function(){
               $('#gotop').show("fade"); 
             }
               
-            // else{//上滚  
-            //   $('#gotop').fadeIn("slow"); 
-            // }  
-            // setTimeout(function(){t = p;},0);         
+            else{//上滚  
+              $('#gotop').hide("fade"); 
+            }  
+            setTimeout(function(){t = p;},0);         
     });  
   });  
   
