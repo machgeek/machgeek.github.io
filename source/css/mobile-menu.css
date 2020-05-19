@@ -6,12 +6,12 @@
   position: fixed;
   bottom: 16px;
   right: 16px;
-  background-color: RGB(158,121,44);
+  background-color: rgb(158,121,44);
   height: 50px;
   width: 50px;
   border-radius: 50%;
   z-index: 20;
-  box-shadow: 0px 3px 8px RGB(158,121,44);
+  box-shadow: 0px 3px 8px rgb(158,121,44);
   cursor: pointer;
 }
 .mobile-menu__line {
@@ -129,7 +129,9 @@
   text-decoration: none;
   color: rgb(255,250,248);
 }
-
+.mobile-nav__link:hover{
+  color: rgb(255,228,225);
+}
 @keyframes fadein {
   0% {
     opacity: 0;
