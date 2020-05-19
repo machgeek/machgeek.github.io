@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="./source/css/src/loading.css">
     <!-- 页面飘浮气泡效果 -->
     <!-- <link rel="stylesheet" href="./source/css/src/dots.css"> -->
+    <!-- 手机菜单 -->
+    <link rel="stylesheet" href="./source/css/mobile-menu.css">
     <!-- ========================== INDEX c s s =============================== -->
     <link rel="stylesheet" href="./source/css/index.css">
     <!-- main>section文章导航 -->
@@ -176,12 +178,31 @@
             </div>
         </div>
 
-
+        <!-- 手机菜单 -->
+        <div class="mobile-menu">
+            <div class="mobile-js-menu">
+                <span class="mobile-menu__line"></span>
+                <span class="mobile-menu__line"></span>
+                <span class="mobile-menu__line"></span>
+            </div>
+            <nav class="mobile-js-nav">
+                <ul class="mobile-nav__list mobile-js-nav__list">
+                    <li class="mobile-nav__item"><a href="/" class="mobile-nav__link">Home</a></li>
+                    <li class="mobile-nav__item"><a href="/post.html" class="mobile-nav__link">Post</a></li>
+                    <li class="mobile-nav__item"><a href="/categories.html" class="mobile-nav__link">Categories</a></li>
+                    <li class="mobile-nav__item"><a href="/secretgarden.html" class="mobile-nav__link">Secret Garden</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     <!-- ========================  J S  ============================ -->
+    <!-- jquery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <!-- header js -->
     <script type="text/javascript" src="./source/js/rolling-text.js"></script>
     <script src="./source/js/menu.js"></script>
+    <!-- 手机菜单 -->
+    <script src="./source/js/mobile-menu.js"></script>
     <!-- ========================  J S  ============================ -->
 
 </body>

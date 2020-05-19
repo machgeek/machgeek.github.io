@@ -3,7 +3,7 @@ body{
     /* background-image: url(https://cdn.jsdelivr.net/gh/machgeek/AAAimg/background/bg2.jpg); */
     /* background-image: url('https://cdn.jsdelivr.net/gh/machgeek/AAAimg/background/bg16x9.jpg'); */
     background-image: url(/source/img/background/bg333.png);
-    background-color: rgb(255,251,248);
+    background-color: rgb(255,250,248);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
