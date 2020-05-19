@@ -8,7 +8,8 @@
     <title>Eabal</title>
 
     <!-- ========================== 通用 c s s ================================ -->
-    <script src="./source/js/jquery-3.4.1.js"></script>
+    <!-- <script src="./source/js/jquery-3.4.1.js"></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <!-- 重置样式表 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- 引入总样式框架 -->
@@ -37,6 +38,8 @@
     <link rel="stylesheet" href="./source/css/post.css">
     <!-- 下划线样式 -->
     <link rel="stylesheet" href="./source/css/src/font/prettylink.css">
+    <!-- 手机菜单 -->
+    <link rel="stylesheet" href="./source/css/mobile-menu.css">
 
 </head>
 
@@ -339,6 +342,23 @@
         <div id="gotop">
             <i class="iconfont icon-arrowsup"></i>
         </div>
+
+        <!-- 手机菜单 -->
+        <div class="mobile-menu">
+            <div class="mobile-js-menu">
+                <span class="mobile-menu__line"></span>
+                <span class="mobile-menu__line"></span>
+                <span class="mobile-menu__line"></span>
+            </div>
+            <nav class="mobile-js-nav">
+                <ul class="mobile-nav__list mobile-js-nav__list">
+                    <li class="mobile-nav__item"><a href="/" class="mobile-nav__link">Home</a></li>
+                    <li class="mobile-nav__item"><a href="/post.html" class="mobile-nav__link">Post</a></li>
+                    <li class="mobile-nav__item"><a href="/categories.html" class="mobile-nav__link">Categories</a></li>
+                    <li class="mobile-nav__item"><a href="/secretgarden.html" class="mobile-nav__link">Secret Garden</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
     <!-- ========================  J S  ============================ -->
@@ -351,6 +371,8 @@
     <script src="./source/js/post.js"></script>
     <!-- 返回顶部按钮 -->
     <script src="./source/js/gotop.js"></script>
+    <!-- 手机菜单 -->
+    <script src="./source/js/mobile-menu.js"></script>
     <!-- ========================  J S  ============================ -->
 
 </body>

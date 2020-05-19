@@ -123,16 +123,12 @@
   transition: all 0.4s ease;
   width: auto;
 }
-@media screen and (max-width: 1200px) {
-  .b-link {
-      font-size: 22px;
+@media screen and (max-width: 1201px) {
+  .menu{
+    display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  .b-link {
-      font-size: 20px;
-  }
-}
+
 .b-link:hover, .b-link--active {
   /* background-color: white; */
   border-left: #BA8748 solid 2px;
