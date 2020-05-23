@@ -1,0 +1,22 @@
+.post2-wrapper{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: 0 auto;
+    padding: 2em 0;
+    width: 70%;
+    height: 100%;
+}
+
+.post2-wrapper>.content {
+    flex-grow: 3;
+}
+
+.post2-wrapper>.line2{
+    flex-grow: 0;
+    border-right: 1px dotted #ddd;
+  }
+  .post2-wrapper>.TOC{
+    flex-grow: 1;
+}

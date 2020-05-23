@@ -1,0 +1,124 @@
+.timeline .wrapper {
+	*zoom: 1;
+  }
+  .timeline .wrapper:before, .timeline .wrapper:after {
+	content: " ";
+	display: table;
+  }
+  .timeline .wrapper:after {
+	clear: both;
+  }
+  .timeline .wrapper ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .timeline {
+	margin: 0 auto;
+	padding: 60px 0;
+  }
+  .timeline .section-title {
+	color: white;
+	margin-bottom: 75px;
+  }
+  .timeline .wrapper {
+	margin: 0 auto;
+	max-width: 880px;
+	position: relative;
+  }
+  .timeline .timeline-marker {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	bottom: 0;
+	width: 1px;
+	/* background: #d3a13b50; */
+	display: block;
+	margin-left: -0.5px;
+  }
+  .timeline .timeline-circle {
+	position: absolute;
+	top: 50%;
+	background: #fff;
+	width: 13px;
+	height: 13px;
+	border-radius: 30%;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(255, 255, 255, 0.8);
+  }
+  .timeline .timeline-left,
+  .timeline .timeline-right {
+	width: 46.7032967033%;
+	background: #fff;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-bottom: 65px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(255, 255, 255, 0.8);
+	position: relative;
+  }
+  .timeline .timeline-left:after,
+  .timeline .timeline-right:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+  }
+  .timeline .timeline-left {
+	float: left;
+  }
+  .timeline .timeline-left:after {
+	right: -10px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 10px solid #fff;
+  }
+  .timeline .timeline-left .timeline-circle {
+	right: -36px;
+  }
+  .timeline .timeline-right {
+	float: right;
+  }
+  .timeline .timeline-right:nth-child(2) {
+	margin-top: 170px;
+  }
+  .timeline .timeline-right:after {
+	left: -10px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 10px solid #fff;
+  }
+  .timeline .timeline-right .timeline-circle {
+	left: -36px;
+  }
+  
+  .timeline-post-title {
+	font-family: 'Noto Serif SC', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	/* font-size: 3rem; */
+	line-height: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: hsl(0,0%,30%);
+  }
+  
+  .timeline-post-content {
+	font-family: 'Noto Serif SC', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	/* font-size: 1.4rem; */
+	/* text-align: center; */
+	line-height: 26px;
+	color: #aaa;
+  }
+  .timeline-post-date{
+	  color: #d3a13b;
+	  font-family: 'Noto Serif SC', sans-serif;
+	  font-weight: bold;
+	  font-size: 14px;
+	  text-align: center;
+  }
+.wow:hover{
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(255, 255, 255, 0.8);
+}
