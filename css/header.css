@@ -3,6 +3,11 @@ header{
     width: 100%;
     margin: 0 auto;
     flex: 0 0 auto;
+    /* background-image: url('https://picsum.photos/1500/180?blur=5');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; */
 }
 
 .sitename{
@@ -30,7 +35,7 @@ header{
 .motto{
     
     width: 240px;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     text-align: center;
     z-index: 2;
 }
@@ -40,6 +45,7 @@ header{
     width: 50px;
     margin-top: 5px;
     text-align: center;
+    /* vertical-align: middle; */
     font-size: 22px;
     font-family: 'Poiret One', sans-serif;
     color: #d3a13b;
