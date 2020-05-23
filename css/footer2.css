@@ -39,19 +39,21 @@ footer a:hover{
 }
 
 #gotop{
-  background-color: transparent;
+  background-color: white;
   position: fixed;
-  color: #d3a03bbd;
+  color: #c8c8c8;
   bottom: 20px;
   right: 20px;
   display: none;
+  border-radius: 20%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(255, 255, 255, 0.8);
 }
 #gotop>i{
   font-size: 2.5em;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(255, 255, 255, 0.8);
 }
 #gotop>i:hover{
-  color: #d3a13b;
+  color: #858585;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 1201px) {
