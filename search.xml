@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Minecraft游戏资料</title>
+      <link href="/2020/07/07/MinecraftNote/"/>
+      <url>/2020/07/07/MinecraftNote/</url>
+      
+        <content type="html"><![CDATA[<h2 id="村民交易"><a href="#村民交易" class="headerlink" title="村民交易"></a>村民交易</h2><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/008dfad0f9826a67ab87bdcc8f987f96a100cd6b.png@1320w_1338h.webp"  alt="008dfad0f9826a67ab87bdcc8f987f96a100cd6b.png@1320w_1338h"></p><h2 id="药水酿造"><a href="#药水酿造" class="headerlink" title="药水酿造"></a>药水酿造</h2><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/%E8%8D%AF%E6%B0%B4%E9%85%BF%E9%80%A0.png"  alt="药水酿造"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Minecraft </tag>
+            
+            <tag> 游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SelfmadeSite</title>
       <link href="/2020/05/15/SelfmadeSite/"/>
       <url>/2020/05/15/SelfmadeSite/</url>
@@ -24,33 +51,6 @@
         <content type="html"><![CDATA[<h1 id="WEB技术学习笔记"><a href="#WEB技术学习笔记" class="headerlink" title="WEB技术学习笔记"></a>WEB技术学习笔记</h1><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><ol><li><p>clearfix：解决高度塌陷&amp;外边距重叠问题</p></li><li><p>绝对定位&gt;stickey</p></li><li><p>尚硅谷86节京东练习还没做</p></li><li><p>css使用flexbox布局实现让页面的footer始终位于底部</p> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-direction</span>: column;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">header</span>&#123;</span><br><span class="line">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">main</span>&#123;</span><br><span class="line">    <span class="attribute">flex</span>: <span class="number">1</span> <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">footer</span>&#123;</span><br><span class="line">    <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><ol><li><p>监视页面滚动并实现“向上滚动显示，向下滚动消失的效果”</p> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 上滚显示map，下滚消失</span></span><br><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">  <span class="keyword">var</span> p=<span class="number">0</span>,t=<span class="number">0</span>;  </span><br><span class="line">  $(<span class="built_in">window</span>).scroll(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;  </span><br><span class="line">          p = $(<span class="keyword">this</span>).scrollTop();  </span><br><span class="line">            </span><br><span class="line">          <span class="keyword">if</span>(t&lt;=p)&#123;<span class="comment">//下滚  </span></span><br><span class="line">            $(<span class="string">'#map'</span>).fadeOut(<span class="string">"slow"</span>); </span><br><span class="line">          &#125;  </span><br><span class="line">            </span><br><span class="line">          <span class="keyword">else</span>&#123;<span class="comment">//上滚  </span></span><br><span class="line">            $(<span class="string">'#map'</span>).fadeIn(<span class="string">"slow"</span>); </span><br><span class="line">          &#125;  </span><br><span class="line">          setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;t = p;&#125;,<span class="number">0</span>);         </span><br><span class="line">  &#125;);  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li><li><p>鼠标点击按钮后缓慢返回顶部</p> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 鼠标点击后缓慢返回顶部</span></span><br><span class="line"><span class="keyword">var</span> btn = $(<span class="string">'#map'</span>);</span><br><span class="line">btn.on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  e.preventDefault();</span><br><span class="line">  $(<span class="string">'html, body'</span>).animate(&#123; <span class="attr">scrollTop</span>: <span class="number">0</span> &#125;, <span class="string">'300'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li><li><p>在html中默认显示一张图片鼠标放在图上图片就换成另一个，当鼠标移开换第三张图片</p> <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"picture/picture3/01.jpg"</span> <span class="attr">width</span>=<span class="string">"100"</span> /&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure> <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"div"</span>).hover(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $(<span class="keyword">this</span>).find(<span class="string">"img"</span>).attr(<span class="string">"src"</span>,<span class="string">"picture/picture3/02.jpg"</span>);</span><br><span class="line">&#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $(<span class="keyword">this</span>).find(<span class="string">"img"</span>).attr(<span class="string">"src"</span>,<span class="string">"picture/picture3/03.jpg"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li></ol><h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><ol><li><p>nginx 强制 https 浏览器总是提醒重定向过多不能正常访问网页</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#改为</span><br><span class="line">if ($scheme &#x3D; http) &#123;</span><br><span class="line">return 301 https:&#x2F;&#x2F;$server_name$request_uri;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Minecraft游戏资料</title>
-      <link href="/2020/04/26/MinecraftNote/"/>
-      <url>/2020/04/26/MinecraftNote/</url>
-      
-        <content type="html"><![CDATA[<h2 id="村民交易"><a href="#村民交易" class="headerlink" title="村民交易"></a>村民交易</h2><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/008dfad0f9826a67ab87bdcc8f987f96a100cd6b.png@1320w_1338h.webp"  alt="008dfad0f9826a67ab87bdcc8f987f96a100cd6b.png@1320w_1338h"></p><h2 id="药水酿造"><a href="#药水酿造" class="headerlink" title="药水酿造"></a>药水酿造</h2><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/%E8%8D%AF%E6%B0%B4%E9%85%BF%E9%80%A0.png"  alt="药水酿造"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 游戏 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Minecraft </tag>
-            
-            <tag> 游戏 </tag>
-            
-        </tags>
       
     </entry>
     
