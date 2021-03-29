@@ -33,7 +33,7 @@
       <link href="/2021/03/23/Java-Study/"/>
       <url>/2021/03/23/Java-Study/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h4 id="连续输入字符串遇到回车停止"><a href="#连续输入字符串遇到回车停止" class="headerlink" title="连续输入字符串遇到回车停止"></a>连续输入字符串遇到回车停止</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Scanner in = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String[] s = in.nextLine().split(<span class="string">","</span>);<span class="comment">//后续可以通过Integer.parseInt()将获取到的字符串数组转化为int型</span></span><br><span class="line"></span><br><span class="line">in.close();</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
