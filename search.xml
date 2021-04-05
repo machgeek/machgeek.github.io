@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>创建个人域名邮箱</title>
+      <link href="/2021/04/05/Personal-domain-email/"/>
+      <url>/2021/04/05/Personal-domain-email/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>首先找域名注册商购买域名，如<a href="https://wanwang.aliyun.com/" target="_blank" rel="noopener">阿里旗下的万网</a>、<a href="https://dnspod.cloud.tencent.com/" target="_blank" rel="noopener">腾讯云</a>，一般谁家便宜选谁家。</p></li><li><p>注册网易企业邮箱账号：<a href="http://ym.163.com/，根据步骤填写信息。" target="_blank" rel="noopener">http://ym.163.com/，根据步骤填写信息。</a></p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/image-20210405164623073.png"  alt="image-20210405164623073"></p></li><li><p>在域名注册商的网站对购买的域名进行DNS解析，并根据要求添加两条记录。</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/image-20210405165628770.png"  alt="image-20210405165628770"></p></li><li><p>验证MX记录。</p></li><li><p>直接使用网易企业邮接收邮箱、或通过其他app(如“网易邮箱大师”)绑定登陆。使用后者登陆时需要根据提示配置服务器信息，以PC端网易邮箱大师举例：</p><ol><li><p>登陆时输入邮箱地址，点击“服务器配置”<br><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/image-20210405170504361.png"  alt="image-20210405170504361"></p></li><li><p>填写如下信息，即可登陆<img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/image-20210405170903244.png"  alt="image-20210405170903244"></p></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 邮箱 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo 常用命令</title>
       <link href="/2021/03/23/Hexo-Orders/"/>
       <url>/2021/03/23/Hexo-Orders/</url>
