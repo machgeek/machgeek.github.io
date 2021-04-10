@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>JavaWebStudy</title>
+      <link href="/2021/04/09/JavaWebStudy/"/>
+      <url>/2021/04/09/JavaWebStudy/</url>
+      
+        <content type="html"><![CDATA[<h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><h3 id="实体引用"><a href="#实体引用" class="headerlink" title="实体引用"></a>实体引用</h3><p>在 XML 中，一些字符拥有特殊的意义。</p><p>如果您把字符 “&lt;” 放在 XML 元素中，会发生错误，这是因为解析器会把它当作新元素的开始。</p><p>这样会产生 XML 错误：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;message&gt;if salary &lt; 1000 then&lt;&#x2F;message&gt;</span><br></pre></td></tr></table></figure><p>为了避免这个错误，请用<strong>实体引用</strong>来代替 “&lt;” 字符：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;message&gt;if salary &lt; 1000 then&lt;&#x2F;message&gt;</span><br></pre></td></tr></table></figure><p>在 XML 中，有 5 个预定义的实体引用：</p><table><thead><tr><th>&lt;</th><th>&lt;</th><th>less than</th></tr></thead><tbody><tr><td>&gt;</td><td>&gt;</td><td>greater than</td></tr><tr><td>&amp;</td><td>&amp;</td><td>ampersand</td></tr><tr><td>&apos;</td><td>‘</td><td>apostrophe</td></tr><tr><td>&quot;</td><td>“</td><td>quotation mark</td></tr></tbody></table><p><strong>注释：</strong>在 XML 中，只有字符 “&lt;” 和 “&amp;” 确实是非法的。大于号是合法的，但是用实体引用来代替它是一个好习惯。</p><h3 id="XML-属性必须加引号"><a href="#XML-属性必须加引号" class="headerlink" title="XML 属性必须加引号"></a>XML 属性必须加引号</h3><p>属性值必须被引号包围，不过单引号和双引号均可使用。比如一个人的性别，person 元素可以这样写：</p><person sex="female"><p>或者这样也可以：</p><person sex='female'><p>如果属性值本身包含双引号，您可以使用单引号，就像这个实例：</p><gangster name='George "Shotgun" Ziegler'><p>或者您可以使用字符实体：</p><gangster name="George &quot;Shotgun&quot; Ziegler">]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MavenSetJDK8</title>
+      <link href="/2021/04/08/MavenSetJDK8/"/>
+      <url>/2021/04/08/MavenSetJDK8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="设置Maven项目使用JDK1-8来编译运行"><a href="#设置Maven项目使用JDK1-8来编译运行" class="headerlink" title="设置Maven项目使用JDK1.8来编译运行"></a>设置Maven项目使用JDK1.8来编译运行</h2><ol><li><p>右键项目，选择“Configure Build Path”</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/image-20210408025726948.png"  alt="image-20210408025726948"></p></li><li><p>删除掉原有的Java1.5，并且add Library</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/image-20210408025815091.png"  alt="image-20210408025815091"></p></li><li><p>选择JRE</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/image-20210408030015250.png"  alt="image-20210408030015250"></p></li><li><p>选择java8并应用</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/image-20210408030117445.png"  alt="image-20210408030117445"></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> Maven </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>创建个人域名邮箱</title>
       <link href="/2021/04/05/Personal-domain-email/"/>
       <url>/2021/04/05/Personal-domain-email/</url>
