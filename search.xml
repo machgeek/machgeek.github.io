@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>nodejs多个版本同时安装，并随时切换[转载]</title>
+      <link href="/2021/10/14/multi-version-nodejs-re/"/>
+      <url>/2021/10/14/multi-version-nodejs-re/</url>
+      
+        <content type="html"><![CDATA[<p>最近接手了公司比较老的项目，使用的jQuery，用的gulp压缩工具，代码拉下来以后，使用node安装好依赖，但是一启动就报错，折腾了好久，找了很多资料，最后发现是node版本的问题，我目前安装的是node13.X的版本，卸载以后安装8.X的版本顺利启动，但是问题来了，我的其他项目需要高版本，岂不是每次换项目都要重新安装一次node？于是找方法同时安装多个node版本，百度了很久有一种nvm的插件，但是搞了好久就是不行，后来通过自己的摸索，利用配置环境变量的方法顺利解决问题。</p><h3 id="第一步：下载好需要安装的node程序（不要用安装包，用压缩包，这是坑）"><a href="#第一步：下载好需要安装的node程序（不要用安装包，用压缩包，这是坑）" class="headerlink" title="第一步：下载好需要安装的node程序（不要用安装包，用压缩包，这是坑）"></a>第一步：下载好需要安装的node程序（不要用安装包，用压缩包，这是坑）</h3><p>node阿里镜像地址：<a href="https://link.segmentfault.com/?enc=%2F9j41dBXAj8omJ4NgCBZSw%3D%3D.MzelTDrb%2F6lW9RXMjR0jRYr53w6vd8pwQTggxAO%2FnWMxqcb9un0zk30e2pTjLBN%2F" target="_blank" rel="noopener">https://npm.taobao.org/mirror…</a><br>下载好自己需要的版本<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHyo2"  alt="1.png"></p><h3 id="第二步：选好安装路径（安装之前一定要卸载掉之前的node，不然会不成功）"><a href="#第二步：选好安装路径（安装之前一定要卸载掉之前的node，不然会不成功）" class="headerlink" title="第二步：选好安装路径（安装之前一定要卸载掉之前的node，不然会不成功）"></a>第二步：选好安装路径（安装之前一定要卸载掉之前的node，不然会不成功）</h3><p>为了方便，我再D盘新建了node文件夹，并将文件解压，将解压后的文件名直接改为版本号，便于分辨<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHypI"  alt="2.png"><br>注意这里有个坑，直接解压出来，里面会多一个文件，路径会错误，一定要加压在文件夹根目录<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHyp8"  alt="3.png"></p><p><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHyqg"  alt="4.png"></p><h3 id="第三步：配置环境变量"><a href="#第三步：配置环境变量" class="headerlink" title="第三步：配置环境变量"></a>第三步：配置环境变量</h3><p>右击 此电脑（我的电脑）——属性——高级系统设置——环境变量<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHyrr"  alt="5.png"></p><p>点击下面的 新建——如图所示，填好以后点击确定<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHytD"  alt="6.png"></p><h3 id="第四步：将建好的变量配置到-Path中"><a href="#第四步：将建好的变量配置到-Path中" class="headerlink" title="第四步：将建好的变量配置到 Path中"></a>第四步：将建好的变量配置到 Path中</h3><p>将 %nodejs%; 添加到Path变量值后面，注意分号要用英文的，而且添加之前，最后面一定要分号结尾，如图<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHyvY"  alt="7.png"></p><h3 id="第五步：配置完以后，所有的窗口都要点击确认，否则不生效，配置到此完毕，测试一下"><a href="#第五步：配置完以后，所有的窗口都要点击确认，否则不生效，配置到此完毕，测试一下" class="headerlink" title="第五步：配置完以后，所有的窗口都要点击确认，否则不生效，配置到此完毕，测试一下"></a>第五步：配置完以后，所有的窗口都要点击确认，否则不生效，配置到此完毕，测试一下</h3><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/bVbHyxM"  alt="8.png"></p><p>一定要点击完所有的 确认，再win+R 输入 cmd， 在cmd窗口输入 node -v<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHyyW"  alt="9.png"></p><h3 id="第六步：切换node版本"><a href="#第六步：切换node版本" class="headerlink" title="第六步：切换node版本"></a>第六步：切换node版本</h3><p>出现上图的node版本号以后，说明配置成功了，接下来我们切换node版本（切换之前关闭 cmd命令窗口，否则不会即时生效）</p><p>打开 环境变量 右击此电脑——属性。。。这里就不重复上图了<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHyBn"  alt="10.png"></p><p>配置完毕以后，点击所有的确定，然后打开 cmd命令窗口，输入 node-v 测试一下<br><img src="/" class="lazyload" data-src="https://segmentfault.com/img/bVbHyCr"  alt="11.png"></p><p>完美切换成功<br>另外有个小技巧：将node各个版本的路径，用记事本保存到桌面，下次切换的时候直接copy，方便又快捷</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/machgeek/typoraImg/img/bVbHyDf"  alt="12.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nodejs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaWebStudy</title>
       <link href="/2021/04/09/JavaWebStudy/"/>
       <url>/2021/04/09/JavaWebStudy/</url>
